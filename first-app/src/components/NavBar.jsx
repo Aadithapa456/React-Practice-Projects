@@ -13,7 +13,7 @@ const NavBar = () => {
             </li>
           ))}
         </ul>
-        <button className="border border-gray-400 p-3 rounded-md">
+        <button className="rounded-md border border-gray-400 p-3">
           <Moon />
         </button>
       </nav>
