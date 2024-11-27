@@ -4,13 +4,6 @@ import Card from "./components/Card";
 import Pagination from "./components/Pagination";
 function App() {
   const [count, setCount] = useState(1);
-  // const onPrev = () => {
-  //   setCount((prev) => (prev === 1 ? Object.keys(contents).length : prev - 1));
-  // };
-
-  // const onNext = () => {
-  //   setCount((prev) => (prev === Object.keys(contents).length ? 1 : prev + 1));
-  // };
   const handlePagination = (direction) => {
     if (direction === "prev") {
       setCount((prev) =>
@@ -24,9 +17,6 @@ function App() {
   };
   return (
     <div className="flex h-full w-full flex-col items-center justify-center gap-2">
-      {/* <button onClick={() => setCount((count) => count - 1)}>-</button>
-      <span>{count}</span>
-      <button onClick={() => setCount((count) => count + 1)}>+</button> */}
       <Card content={contents[count]} />
       <Pagination onClick={handlePagination} />
     </div>
